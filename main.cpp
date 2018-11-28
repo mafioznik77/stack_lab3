@@ -3,13 +3,13 @@
 
 void main()
 {
-	TCalculator clc;
+	TCalculator calc;
 	string example;
 
 	cout << "Enter exp" << endl;
 	cin >> example;
 
-	clc.SetInf(example);
-	clc.ToPost();
-	cout << clc.Calcucate() << endl;
+	calc.SetInf(example);
+	calc.ToPost();
+	cout << calc.Calcucate() << endl;
 }
