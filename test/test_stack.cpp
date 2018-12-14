@@ -1,12 +1,12 @@
 #include "../tStack.h"
 #include "gtest.h"
 
-TEST(TStack, can_create_stack_with_positive_length)
+TEST(TStack, can_create_stack_with_positive_size)
 {
 	ASSERT_NO_THROW(TStack<int> TS(6));
 }
 
-TEST(TStack, throws_when_create_stack_with_negative_length)
+TEST(TStack, throws_when_create_stack_with_negative_size)
 {
 	ASSERT_ANY_THROW(TStack<int> TS(-6));
 }
@@ -28,17 +28,19 @@ TEST(TStack, created_stack_is_empty)
 TEST(TStack, can_push_element)
 {
 	TStack<int> TS(3);
-
-	ASSERT_NO_THROW(TS.Push(45));
+	for (int i = 0; i<3; i++)
+		TS.Push(i);
+	ASSERT_ANY_THROW(TS.Push(2));
 }
 
-TEST(TStack, can_pop_element)
+TEST(TStack, can_pop_element) 
 {
-	TStack<int> TS(3);
+	TStack<int> TS(5);
 
-	TS.Push(45);
+	for (int i = 0; i<5; i++)
+		TS.Push(i);
+	ASSERT_NO_THROW(TS.Pop());
 
-	EXPECT_EQ(45, TS.Pop());
 }
 
 TEST(TStack, can_check_top_element)
@@ -56,7 +58,7 @@ TEST(TStack, throws_when_pop_empty_stack)
 	ASSERT_ANY_THROW(St.Pop());
 }
 
-TEST(TStack, throws_when_stack_overflow)
+TEST(TStack, throws_when_stack_full)
 {
 	TStack<int> TS(1);
 	TS.Push(1);
@@ -72,4 +74,5 @@ TEST(TStack, can_clear_stack)
 	TS.Clr();
 
 	ASSERT_TRUE(TS.IsEmpty());
+	system("pause");
 }
