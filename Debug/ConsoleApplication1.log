@@ -1,0 +1,8 @@
+﻿  main.cpp
+c:\users\pudge\documents\github\stack_lab3\tcalc.h(53): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\pudge\documents\github\stack_lab3\tcalc.h(98): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\pudge\documents\github\stack_lab3\tcalc.h(129): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\pudge\documents\github\stack_lab3\tcalc.h(177): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\pudge\documents\github\stack_lab3\tcalc.h(192): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\pudge\documents\github\stack_lab3\tcalc.h(86): warning C4715: TCalculator::Prty: значение возвращается не при всех путях выполнения
+  ConsoleApplication1.vcxproj -> C:\Users\Pudge\Documents\GitHub\stack_lab3\Debug\ConsoleApplication1.exe

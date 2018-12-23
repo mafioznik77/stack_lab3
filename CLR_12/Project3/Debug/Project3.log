@@ -1,9 +1,8 @@
-﻿Build started 28.11.2018 15:44:27.
-     1>Project "C:\Users\serobjan.n\Documents\projectsgit\stack_lab3\CLR_12\Project3\Project3.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         Project3.vcxproj -> C:\Users\serobjan.n\Documents\projectsgit\stack_lab3\Debug\Project3.exe
-     1>Done Building Project "C:\Users\serobjan.n\Documents\projectsgit\stack_lab3\CLR_12\Project3\Project3.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.06
+﻿  MyForm.cpp
+c:\users\pudge\documents\github\stack_lab3\tcalc.h(38): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\pudge\documents\github\stack_lab3\tcalc.h(83): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\pudge\documents\github\stack_lab3\tcalc.h(114): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\pudge\documents\github\stack_lab3\clr_12\project3\myform.cpp(8): error C2976: std::array: слишком мало аргументов шаблон
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\utility(498): note:  см. объявление "std::array"
+c:\users\pudge\documents\github\stack_lab3\clr_12\project3\myform.cpp(8): error C3699: ^: это косвенное обращение невозможно использовать для типа "std::array"
+  c:\users\pudge\documents\github\stack_lab3\clr_12\project3\myform.cpp(8): note: для продолжения работы компилятор заменил "^" на "*"
